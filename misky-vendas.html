@@ -87,6 +87,41 @@
   </div>
 </header>
 
+<!-- LANÇAMENTO -->
+<div class="card">
+  <h2 id="formTitle">Vendas do dia</h2>
+  <div class="edit-banner" id="editBanner">
+    <span id="editBannerText">Editando…</span>
+    <button type="button" id="btnCancelEdit">Cancelar</button>
+  </div>
+  <div class="field">
+    <label for="fData">Data</label>
+    <input type="date" id="fData">
+  </div>
+  <div class="field">
+    <label for="fPacks">Pacotinhos vendidos</label>
+    <input type="number" id="fPacks" inputmode="numeric" min="0" step="1" placeholder="0">
+  </div>
+  <div class="row3">
+    <div>
+      <label for="fPix">Pix (R$)</label>
+      <input type="number" id="fPix" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+    </div>
+    <div>
+      <label for="fDin">Dinheiro (R$)</label>
+      <input type="number" id="fDin" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+    </div>
+    <div>
+      <label for="fFalta">Falta pagar (R$)</label>
+      <input type="number" id="fFalta" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+    </div>
+  </div>
+  <div class="total-line"><span>Total do dia</span><b id="dayTotal">R$ 0,00</b></div>
+  <button class="btn-primary" id="btnSave">Salvar vendas</button>
+  <div style="height:10px"></div>
+  <button class="btn-danger hidden" id="btnDelete">Excluir este dia</button>
+</div>
+
 <!-- RESUMO -->
 <div class="cards">
   <div class="sum">
@@ -121,41 +156,6 @@
   </div>
   <div id="chartSvg"></div>
   <div class="chart-detail" id="chartDetail">Toque num ponto pra ver o detalhe do dia</div>
-</div>
-
-<!-- LANÇAMENTO -->
-<div class="card">
-  <h2 id="formTitle">Vendas do dia</h2>
-  <div class="edit-banner" id="editBanner">
-    <span id="editBannerText">Editando…</span>
-    <button type="button" id="btnCancelEdit">Cancelar</button>
-  </div>
-  <div class="field">
-    <label for="fData">Data</label>
-    <input type="date" id="fData">
-  </div>
-  <div class="field">
-    <label for="fPacks">Pacotinhos vendidos</label>
-    <input type="number" id="fPacks" inputmode="numeric" min="0" step="1" placeholder="0">
-  </div>
-  <div class="row3">
-    <div>
-      <label for="fPix">Pix (R$)</label>
-      <input type="number" id="fPix" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
-    </div>
-    <div>
-      <label for="fDin">Dinheiro (R$)</label>
-      <input type="number" id="fDin" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
-    </div>
-    <div>
-      <label for="fFalta">Falta pagar (R$)</label>
-      <input type="number" id="fFalta" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
-    </div>
-  </div>
-  <div class="total-line"><span>Total do dia</span><b id="dayTotal">R$ 0,00</b></div>
-  <button class="btn-primary" id="btnSave">Salvar vendas</button>
-  <div style="height:10px"></div>
-  <button class="btn-danger hidden" id="btnDelete">Excluir este dia</button>
 </div>
 
 <!-- HISTÓRICO -->
